@@ -37,7 +37,7 @@
             let _html = `<table class="table table-hover"><thead><tr><td></td><td>Nombre</td><td>Estatus</td></tr></thead><tbody>`;
 
             $.ajax({
-                url: 'https://servicespan.azurewebsites.net/Services/GetLisServices',
+                url: 'https://investigacion.iqsec.com.mx:7000/Services/GetLisServices',
                 type: 'GET',
                 dataType: 'json',
                 headers: {'ApiKey':'UDu80ib0pgDNrijzxRzCiB9XBAVoGS3y'},
@@ -79,7 +79,7 @@
             if(status) { st=1; }
 
             $.ajax({
-                url: 'https://servicespan.azurewebsites.net/Services/ServiceActive',
+                url: 'https://investigacion.iqsec.com.mx:7000/Services/ServiceActive',
                 type: 'POST',
                 dataType: 'json',
                 headers: {'ApiKey':'UDu80ib0pgDNrijzxRzCiB9XBAVoGS3y'},
